@@ -139,15 +139,15 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
            <p>Other Services</p>
-        </div>
+        </div>      
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-4" *ngFor="let obj of ourServices">
             <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Online Services</a></h3>
+              <i class="{{obj.iconClass}}" style="color: #ffbb2c;"></i>
+              <h3><a href="">{{obj.name}}</a></h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <!-- <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
               <h3><a href="">Website Designing</a></h3>
@@ -212,9 +212,8 @@
               <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
               <h3><a href="">Adhar Updates</a></h3>
             </div>
-          </div>
+          </div> -->
         </div>
-
       </div>
     </section><!-- End Features Section -->
 
@@ -233,12 +232,13 @@
               <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
+                  <h4>Graphic-Web-Multimedia</h4>
                   <p class="price">$169</p>
                 </div>
 
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a href="course-details.html">Graphic-Web-Multimedia</a></h3>
+                <p>Graphics, Web & 2D
+                  Graphic, Animation & VFX.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -259,11 +259,11 @@
               <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
+                  <h4>Graphic Designing</h4>
                   <p class="price">$250</p>
                 </div>
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                <h3><a href="course-details.html">Graphic Designing</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -284,7 +284,7 @@
               <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
+                  <h4>Software Development</h4>
                   <p class="price">$250</p>
                 </div>
 
